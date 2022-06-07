@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Bmi.dart';
-import 'package:flutter/src/painting/image_provider.dart';
+import 'views/Bmi.dart';
 
 void main() {
   runApp(const MyApp());
