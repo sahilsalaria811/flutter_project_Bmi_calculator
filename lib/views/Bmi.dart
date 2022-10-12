@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/src/material/bottom_navigation_bar.dart';
 
 class Bmi extends StatefulWidget {
   @override
@@ -10,10 +12,12 @@ class _Bmistate extends State<Bmi> {
   final TextEditingController _heightcontroller = TextEditingController();
   final TextEditingController _weightcontroller = TextEditingController();
   double? _result;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
+
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Bmi Calculator'),
@@ -75,6 +79,32 @@ class _Bmistate extends State<Bmi> {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.lightBlueAccent,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.ad_units_outlined,
+                color: Colors.black,
+              ),
+              label: 'Home',
+              backgroundColor: Colors.white),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.ad_units_outlined,
+                color: Colors.black,
+              ),
+              label: 'Home',
+              backgroundColor: Colors.white),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.ad_units_outlined,
+                color: Colors.black,
+              ),
+              label: 'Home',
+              backgroundColor: Colors.white),
+        ],
       ),
     );
   }
