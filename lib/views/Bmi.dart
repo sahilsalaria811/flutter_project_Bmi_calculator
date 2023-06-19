@@ -58,7 +58,7 @@ class _Bmistate extends State<Bmi> {
                 "Calculate",
                 style: TextStyle(color: Colors.white),
               ),
-              style: ElevatedButton.styleFrom(primary: Colors.lightBlueAccent),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.lightBlueAccent),
               onPressed: calculateBMI,
             ),
             SizedBox(
